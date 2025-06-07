@@ -1,4 +1,4 @@
-# 🔐 Brute Force Custom HTTP Header (Simulasi Edukasi)
+# 🔐 Brute Force Custom HTTP Header
 
 Simulasi brute force terhadap custom HTTP header — berguna untuk edukasi keamanan API dan pengujian keamanan berbasis token. Cocok untuk memahami risiko apabila developer menyimpan otentikasi dalam header tanpa validasi ketat.
 

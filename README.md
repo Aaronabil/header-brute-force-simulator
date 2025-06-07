@@ -6,20 +6,49 @@ Simulasi brute force terhadap custom HTTP header — berguna untuk edukasi keama
 
 ---
 
-## 📌 Deskripsi
+## Deskripsi
 
 Simulasi ini menargetkan header custom seperti: X-Device-ID: device-xxxxxx
 
 Tujuan dari script ini adalah menebak kombinasi `xxxxxx` menggunakan metode brute force.
+Untuk contoh disini saya menggunakan kombinasi `a1b2c3`
 
 ---
 
-## 🎯 Tujuan Edukasi
+## Tujuan Edukasi
 
 - Mengenali risiko penggunaan header sebagai satu-satunya autentikasi.
 - Memahami pentingnya entropi dan panjang token.
 - Belajar dasar brute force & eksplorasi kombinasi token.
 
 ---
+
+## Parameter yang bisa disesuaikan
+
+- `TARGET_HEADER`
+Nilai header yang ingin ditebak
+- `charset`
+Karakter yang digunakan, untuk a-z menggunakan string.ascii_lowercase dan untuk 0-9 menggunakan string.digits
+- `length`
+Panjang token target (default 6)
+- `sleep()`
+Bisa ditambahkan untuk simulasi delay tetapi disini saya tidak memakainya
+
+## Contoh Penggunaan
+- Buka file di visual studio code atau code editor lain
+- Buka terminal
+- Jalankan
+```
+python week2_sesi3.py
+```
+- Untuk contoh kombinasi a1b2c3:
+
+
+## Potensi Pengembangan
+- CLI interaktif (input target, charset, panjang token)
+- Multi-threaded brute force (lebih cepat)
+- Simulasi server lokal untuk pengujian end-to-end
+
+
 
 

@@ -41,13 +41,22 @@ Bisa ditambahkan untuk simulasi delay tetapi disini saya tidak memakainya
 ```
 python week2_sesi3.py
 ```
-- Untuk contoh kombinasi a1b2c3:
 
+### Contoh kombinasi a1b2c3:
+![Hasil](https://github.com/Aaronabil/header-brute-force-simulator/blob/main/hasil.jpg?raw=true)
+- Disini saya melakukan 45.432.678 percobaan dan memakan waktu 2578 detik atau setara dengan 42 menit
+
+---
 
 ## Potensi Pengembangan
 - CLI interaktif (input target, charset, panjang token)
 - Multi-threaded brute force (lebih cepat)
 - Simulasi server lokal untuk pengujian end-to-end
+
+---
+
+## Penutup
+- Header brute force adalah salah satu contoh bagaimana kesalahan kecil dalam desain autentikasi bisa berdampak besar. Pelajari, uji, dan gunakan pengetahuan ini secara etis.
 
 
 

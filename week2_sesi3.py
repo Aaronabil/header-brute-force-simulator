@@ -2,13 +2,10 @@ import itertools
 import string
 import time
 
-# ✅ Simulasi target header yang dianggap valid oleh server
-TARGET_HEADER = "device-a1b2c3"  # Ini "secret" yang akan ditebak
+TARGET_HEADER = "device-a1b2c3"
 
-# ✅ Charset yang digunakan dalam token (bisa disesuaikan)
-charset = string.ascii_lowercase + string.digits  # a-z0-9
+charset = string.ascii_lowercase + string.digits
 
-# ✅ Panjang token bagian belakang (tanpa prefix "device-")
 token_length = 6
 
 def brute_force_header_token():
@@ -29,9 +26,6 @@ def brute_force_header_token():
             elapsed = time.time() - start_time
             print(f"\n✅ Match ditemukan!\nHeader: {header}\nTotal Percobaan: {attempts}\nWaktu: {elapsed:.2f} detik")
             return
-
-        # Delay kecil agar terlihat prosesnya
-        # time.sleep(0.01)
 
     print("\n❌ Tidak ditemukan (perlu lebih banyak kombinasi atau charset).")
 

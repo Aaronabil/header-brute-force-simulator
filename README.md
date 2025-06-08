@@ -1,63 +1,64 @@
 # 🔐 Brute Force Custom HTTP Header
 
-Simulasi brute force terhadap custom HTTP header — berguna untuk edukasi keamanan API dan pengujian keamanan berbasis token. Cocok untuk memahami risiko apabila developer menyimpan otentikasi dalam header tanpa validasi ketat.
+Brute force simulation of custom HTTP headers — useful for API security education and token-based security testing. Great for understanding the risks when developers store authentication in headers without strict validation.
 
-> ⚠️ **Disclaimer:** Tools ini hanya untuk **pembelajaran & simulasi lokal**. Jangan digunakan terhadap sistem nyata tanpa izin.
-
----
-
-## Deskripsi
-
-Simulasi ini menargetkan header custom seperti: X-Device-ID: device-xxxxxx
-
-Tujuan dari script ini adalah menebak kombinasi `xxxxxx` menggunakan metode brute force.
-Untuk contoh disini saya menggunakan kombinasi `a1b2c3`
+> ⚠️ **Disclaimer:** This tool is for **local learning & simulation** only. Do not use on real systems without permission..
 
 ---
 
-## Tujuan Edukasi
+## Description
 
-- Mengenali risiko penggunaan header sebagai satu-satunya autentikasi.
-- Memahami pentingnya entropi dan panjang token.
-- Belajar dasar brute force & eksplorasi kombinasi token.
+This simulation targets custom headers such as: X-Device-ID: device-xxxxxx
+
+The goal of this script is to guess the combination `xxxxxx` using brute force method.
+For this example I use the combination `a1b2c3`.
 
 ---
 
-## Parameter yang bisa disesuaikan
+## Educational Goals
+
+- Recognize the risks of using headers as the sole authentication.
+- Understand the importance of entropy and token length.
+- Learn the basics of brute force & token combination exploration.
+  
+---
+
+## Customizable parameters
 
 - `TARGET_HEADER`
-Nilai header yang ingin ditebak
+Header value to guess
 - `charset`
-Karakter yang digunakan, untuk a-z menggunakan string.ascii_lowercase dan untuk 0-9 menggunakan string.digits
+Characters used, for a-z use string.ascii_lowercase and for 0-9 use string.digits
 - `length`
-Panjang token target (default 6)
+Target token length (default 6)
 - `sleep()`
-Bisa ditambahkan untuk simulasi delay tetapi disini saya tidak memakainya
+Can be added for delay simulation but here I don't use it
+
+---
 
 ## Contoh Penggunaan
-- Buka file di visual studio code atau code editor lain
-- Buka terminal
-- Jalankan
+- Open the file in visual studio code or another code editor
+- Open terminal
+- Run
 ```
 python week2_sesi3.py
 ```
 
-### Contoh kombinasi a1b2c3:
+### Example of combination a1b2c3:
 ![Hasil](https://github.com/Aaronabil/header-brute-force-simulator/blob/main/hasil.jpg?raw=true)
-- Disini saya melakukan 45.432.678 percobaan dan memakan waktu 2578 detik atau setara dengan 42 menit
+- Here I did 45,432,678 trials and it took 2578 seconds or the equivalent of 42 minutes.
 
 ---
 
-## Potensi Pengembangan
-- CLI interaktif (input target, charset, panjang token)
-- Multi-threaded brute force (lebih cepat)
-- Simulasi server lokal untuk pengujian end-to-end
+## Development Potential
+- Interactive CLI (target input, charset, token length)
+- Multi-threaded brute force (faster)
+- Local server simulation for end-to-end testing
 
 ---
 
-## Penutup
-- Header brute force adalah salah satu contoh bagaimana kesalahan kecil dalam desain autentikasi bisa berdampak besar. Pelajari, uji, dan gunakan pengetahuan ini secara etis.
-
+## Closing
+- Brute force headers are an example of how a small mistake in authentication design can have a big impact. Learn, test, and use this knowledge ethically.
 
 
 
